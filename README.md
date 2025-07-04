@@ -40,6 +40,12 @@ A responsive portfolio website showcasing personal projects, profile, and contac
 - Managing mini projects with organized folder structure
 - Writing maintainable and semantic HTML/CSS
 
+## 🚀 Future Scope
+
+- Add more projects (e.g., calculator, to-do list, form validator)
+- Improve responsiveness using media queries
+- Host projects using GitHub Pages for live preview
+
 ## 📁 Folder Structure
 
 ```mini-projects-html-css-js/
@@ -64,9 +70,3 @@ A responsive portfolio website showcasing personal projects, profile, and contac
 │ ├── ...
 │
 └── README.md```
-
-## 🚀 Future Scope
-
-- Add more projects (e.g., calculator, to-do list, form validator)
-- Improve responsiveness using media queries
-- Host projects using GitHub Pages for live preview
