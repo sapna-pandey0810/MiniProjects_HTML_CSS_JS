@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Netflix Portfolio</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+        }
+        header {
+            width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header .user img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .search-bar {
+            margin-top: 1em;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            padding: 0.5em;
+            width: 50%;
+            border: none;
+            border-radius: 0.25em;
+        }
+        .search-bar button {
+            padding: 0.5em;
+            border: none;
+            border-radius: 0.25em;
+            background-color: red;
+            color: #fff;
+            margin-left: 0.5em;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: darkred;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+        section {
+            background-color: #333;
+            padding: 2em;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 0.5em;
+            width: 80%;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        button {
+            background-color: red;
+            color: #fff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 0.5em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+        #hero {
+            background: url('hero-background.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 5em 2em;
+            text-align: center;
+            border-radius: 0.5em;
+        }
+        #featured-content ul {
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+        #featured-content li {
+    width: 200px;
+    height: 300px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    background-color: #000; /* Optional: black background for empty space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+
+        #featured-content li:hover {
+            transform: scale(1.05);
+        }
+        #featured-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* ✅ Show full image without cropping */
+    display: block;
+}
+
+        #genres {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .genre {
+            background-color: #444;
+            padding: 1em;
+            border-radius: 0.5em;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #141414;
+            padding: 1em;
+            text-align: center;
+            color: #888;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin-top: 1em;
+        }
+        .social-media a {
+            color: #fff;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>Netflix Portfolio</center></h1>
+	<header>
+		<div class="logo">
+            <img src="netflix-logo.png" alt="Netflix Logo">
+        </div>
+        <nav>
+            <ul class="imgages">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+                <li><a href="#">Browse by Languages</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img src="user-icon.png" alt="User Icon">
+        </div>
+	</header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for movies, shows, genres...">
+        <button>Search</button>
+    </div>
+	<main>
+		<section id="hero">
+			<h1>Welcome to Netflix</h1>
+			<p>Watch your favorite shows and movies anytime, anywhere</p>
+			<button>Get Started</button>
+		</section>
+		<section id="featured-content">
+			<h2>Featured Content</h2>
+			<ul>
+				<li><img src="image1.jpg" alt="Image 1"></li>
+				<li><img src="image2.jpg" alt="Image 2"></li>
+				<li><img src="image3.jpg" alt="Image 3"></li>
+                <li><img src="image4.jpg" alt="Image 4"></li>
+                <li><img src="image5.png" alt="Image 5"></li>
+                <li><img src="image6.jpg" alt="Image 6"></li>
+                <li><img src="image7.jpg" alt="Image 7"></li>
+			</ul>
+		</section>
+		<section id="genres">
+			<h2>Genres</h2>
+			<div class="genre">Action</div>
+			<div class="genre">Comedy</div>
+			<div class="genre">Drama</div>
+			<div class="genre">Horror</div>
+			<div class="genre">Sci-Fi</div>
+			<div class="genre">Romance</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Netflix, Inc.</p>
+		<div class="social-media">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+		</div>
+	</footer>
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+</body>
+</html>

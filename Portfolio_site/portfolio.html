@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            padding: 1em;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+        section {
+            background-color: #fff;
+            padding: 2em;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        #skills li {
+            background-color: #e0e0e0;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border-radius: 4px;
+        }
+        #testimonials blockquote {
+            font-style: italic;
+            color: #666;
+        }
+        #testimonials cite {
+            display: block;
+            text-align: right;
+            color: #999;
+            margin-top: 0.5em;
+        }
+        footer {
+            background-color: #333;
+            padding: 1em;
+            text-align: center;
+            color: #fff;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin-top: 1em;
+        }
+        .social-media a {
+            color: #fff;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        .box {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+        }
+        .write {
+            flex: 1; 
+            text-align: left;
+        }
+        .write p {
+            margin-bottom: 10px;
+        }
+        .img {
+            flex: 1;
+            text-align: right;
+        }
+        .img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; 
+            border: 5px solid #fff; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio Website</h1>
+            <div class="box">
+                <div class="write">
+                    <p>LinkedIn : www.linkedin.com/in/sapna-pandey-78188a250<br>
+                        Phone: 7467803466<br>
+                        Email: soniyapandey0810@gmail.com
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="sapna.jpeg">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h1>About Me</h1>
+            <h3>Career Objective: </h3>
+                <p>-To secure a challenging and rewarding role in the tech industry where I can utilize my skills and knowledge to drive success.</p>
+                <br>
+                <h3>Education:</h3>
+                <p>- Bachelor of Computer Application (BCA), Graphic Era Hill University (2022-2025) </p><br>
+                <h3>Technical Skills: </h3>
+                <p>- Programming languages: C, C++, HTML5, CSS, JavaScript, PHP</p>
+                <p>- Web Development: Front-end and Back-end development</p>
+                <p>- Data Analysis: Pandas</p>
+                <p>- Strong understanding of web development, data structures, and algorithm design</p>
+                <p>- Proficient in coding, problem-solving, and team collaboration</p>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <p>- Online Voting System (Project Name: eVote)<br>
+                - Developed a secure and user-friendly online voting system using HTML5, CSS, JavaScript, and PHP<br>
+                - Implemented features for user registration, voting, and result analysis<br>
+                - Ensured data security and integrity using PHP and MySQL<br>
+            </p>
+        </section>
+        <section id="skills">
+            <h1>Key Skills</h1>
+            <ul>
+                <li>Web Development (Front-end and Back-end)</li>
+                <li>Web Design (HTML5, CSS)</li>
+                <li>Web Application Development (JavaScript, PHP)</li>
+                <li>Data Analysis and Visualization (Pandas)</li>
+                <li>Problem-Solving and Algorithm Design</li>
+                <li>Teamwork and Collaboration</li>
+                <li>Data Security and Integrity</li>
+            </ul>
+        </section>
+        <section id="testimonials">
+            <h1>Testimonials</h1>
+            <blockquote>
+                "An exceptional developer who consistently delivers high-quality work on time. Her attention to detail and problem-solving skills are top-notch."
+                <cite>- John Doe, CEO of Company</cite>
+            </blockquote>
+            <blockquote>
+                "Working with web developer was a pleasure. Highly skilled and very professional. I highly recommend her for any web development project."
+                <cite>- Jane Smith, Project Manager at Company</cite>
+            </blockquote>
+        </section>
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>Get in touch with me through email or social media:</p>
+            <p>Email: <a href="mailto:sapna@example.com">soniyapandey0810@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/sapna-pandey0810">https://github.com/sapna-pandey0810</a></p>
+        </section>
+    </main>
+    <footer>
+        <p> Sapna Pandey</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/sapna-pandey-78188a250" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+</body>
+</html>
